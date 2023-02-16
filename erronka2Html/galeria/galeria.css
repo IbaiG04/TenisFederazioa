@@ -1,0 +1,60 @@
+/* GALERIA */
+
+hr{
+    width: 75%;
+    background-color: black;
+}
+
+section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+section p{
+    text-align: center;
+    color: brown;
+    font-size: 50px;
+    margin-top: 2em;
+    
+}
+
+.caja{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imagen-jok{
+    width: 4%;
+    text-align: center;
+}
+
+#jok{
+    width: 49%;
+}
+
+.imagen{
+    width: 49%;
+    padding: 5px;
+    transition: transform 0.5s;
+}
+
+.imagen-jok{
+    transition: transform 0.5s;
+}
+
+.imagen:hover{
+    transform: scale(1.02);
+}
+
+.imagen-jok:hover{
+    transform: scale(1.02);
+}
+
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
