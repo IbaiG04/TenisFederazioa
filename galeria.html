@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eu">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/galeria.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css//index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="IMG\ball.png">
-    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="img/ball.png">
+    <title>Galeria</title>
 </head>
 
 <body>
     <header>
         <!-- 	<h1 class="logo">Birdie</h1> -->
-        <img src="IMG\logo.png" class="logo">
+        <img src="img/logo.png" class="logo">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
         <nav>
@@ -29,7 +29,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="albisteak.html">ALBISTEAK</a></li>
                 <li><a href="egutegia.html">EGUTEGIA</a></li>
-                <li><a href="galeria\galeria.html">GALERIA</a></li>
+                <li><a href="#">GALERIA</a></li>
                 <li><a href="denda.html">DENDA</a></li>
             </ul>
         </nav>
@@ -40,35 +40,46 @@
             <a href="log.html">Login/Registrer</a>
         </nav>
     </header>
-
-
-
-    <form action="/action_page.php" method="post">
-        <div class="container">
-            <h1>Login</h1>
-            <label for="email" ><b>Emaila</b></label>
-            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Sartu Emaila" name="email" id="email" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Sartu Passworda" name="psw" required>
-
-            <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
+    <nav class="registrer">
+        <a href="#">Login</a>
+        <a href="#">Registrer</a>
+    </nav>
+    <section>
+       
+        <p>GALERIA</p>
+        <hr>
+        <div class="caja">
+            <div class="imagen">
+                <a href="AO.html" target="_blank"><img src="/img/auso/2239130-46681390-2560-1440.jpg"
+                        alt="" /></a>
+                <h1>Australia Open 2023</h1>
+            </div>
+            <div class="imagen">
+                <a href="US.html" target="_blank"><img src="/img/USTA/c_USTA1035787_20180901_Ashe_2048x1152.jpg"
+                        alt="" /></a>
+                <h1>US Open 2022</h1>
+            </div>
+            <div class="imagen">
+                <a href="RolandGarros.html"target="_blank"><img src="/img/Garros/rolandgar.jpeg" target="_blank" alt="" /></a>
+                <h1>Roland Garros 2022</h1>
+            </div>
+            <div class="imagen">
+                <a href="Wimbledon.html"target="_blank"> <img src="/img/Wimbledon/wimble rafa.jpeg" target="_blank"
+                        alt="" /></a>
+                <h1>Wimbledon 2022</h1>
+            </div>
+            <div class="imagen-jok">
+                <a href="Jokalariak.html"target="_blank"><img id="jok" src="/img/general/GSA6KAB4Z5B75FE24S7MACY7MM.jpg"
+                        target="_blank" alt="" /></a>
+                <h1>Jokalariak</h1>
+            </div>
         </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw"><a href="registrer.html">Erregistratu</a></span>
-        </div>
-    </form>
-
+    </section>
     <footer class="footer-distributed">
 
         <div class="footer-left">
 
-            <img src="IMG\logo.png">
+            <img src="img/logo.png">
 
             <p class="footer-links">
                 <a href="index.html" class="link-1">Home</a>
@@ -79,7 +90,7 @@
 
                 <a href="egutegia.html">Egutegia</a>
 
-                <a href="galeria\galeria.html">Galeria</a>
+                <a href="galeria.html">Galeria</a>
 
                 <a href="log.html">Sign-in</a>
             </p>
@@ -125,19 +136,6 @@
         </div>
 
     </footer>
-    <script>
-        let container = document.getElementById("container");
-
-        toggle = () => {
-            container.classList.toggle("sign-in");
-            container.classList.toggle("sign-up");
-        };
-
-        setTimeout(() => {
-            container.classList.add("sign-in");
-        }, 200);
-
-    </script>
 </body>
 
 </html>

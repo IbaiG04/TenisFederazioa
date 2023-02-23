@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/ball.png">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <!-- 	<h1 class="logo">Birdie</h1> -->
+        <img src="img/logo.png" class="logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav>
+            <ul class="leftul">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </ul>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="albisteak.html">ALBISTEAK</a></li>
+                <li><a href="egutegia.html">EGUTEGIA</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="denda.html">DENDA</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav class="registrer">
+            <a href="log.html">Login/Registrer</a>
+        </nav>
+    </header>
+
+
+
+    <form action="/action_page.php" method="post">
+        <div class="container">
+            <h1>Login</h1>
+            <label for="email" ><b>Emaila</b></label>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Sartu Emaila" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Sartu Passworda" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="registrer.html">Erregistratu</a></span>
+        </div>
+    </form>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img src="img/logo.png">
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+                <a href="albisteak.html">Albisteak</a>
+
+                <a href="denda.html">Denda</a>
+
+                <a href="egutegia.html">Egutegia</a>
+
+                <a href="galeria.html">Galeria</a>
+
+                <a href="log.html">Sign-in</a>
+            </p>
+            <p class="footer-company-name">tenisfederazioa © 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Travesía "c" de Uribarri 3</span> Bilbao, Bizkaia</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+0034 666 555 666</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@tenisfederazioa.com">support@tenisfederazioa.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Guri buruz: </span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        let container = document.getElementById("container");
+
+        toggle = () => {
+            container.classList.toggle("sign-in");
+            container.classList.toggle("sign-up");
+        };
+
+        setTimeout(() => {
+            container.classList.add("sign-in");
+        }, 200);
+
+    </script>
+</body>
+
+</html>

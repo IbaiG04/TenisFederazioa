@@ -119,7 +119,10 @@
 .event-calendar .event-icon .month,
 .event-calendar .event-icon .date {
   display:block;
+    margin-bottom: -10%;
 }
+
+
 
 .event-calendar .event-icon .month {
   text-transform:uppercase;
